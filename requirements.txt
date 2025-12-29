@@ -1,0 +1,55 @@
+# ==========================================
+# CitedRAG - Production RAG with Citations
+# ==========================================
+
+# Core Framework
+streamlit==1.31.1
+python-dotenv==1.0.1
+
+# LLM & Orchestration
+langchain==0.1.13
+langchain-community==0.0.29
+langchain-groq==0.0.1
+groq==0.4.2
+
+# Vector Store & Search
+chromadb==0.4.24
+rank-bm25==0.2.2
+
+# Embeddings
+sentence-transformers==2.5.1
+torch==2.2.1
+transformers==4.38.2
+
+# Document Processing
+pymupdf==1.23.26
+pypdf2==3.0.1
+
+# Evaluation
+ragas==0.1.7
+datasets==2.18.0
+
+# Utilities
+numpy==1.26.4
+pandas==2.2.1
+tiktoken==0.6.0
+requests==2.31.0
+pydantic==2.6.4
+
+# Rate Limiting & Caching
+cachetools==5.3.3
+
+# Logging & Monitoring
+loguru==0.7.2
+
+# Testing
+pytest==8.1.1
+pytest-cov==4.1.0
+
+# Local LLM (Fallback)
+ollama==0.1.7
+
+# Optional - for notebooks
+jupyter==1.0.0
+matplotlib==3.8.3
+seaborn==0.13.2

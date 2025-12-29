@@ -1,0 +1,2 @@
+# System dependencies for Hugging Face Spaces
+build-essential
