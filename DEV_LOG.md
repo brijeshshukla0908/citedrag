@@ -81,6 +81,7 @@
 
 ### Time Spent: 30 minutes
 
+---
 
 ## 2025-12-29 - Session 3: Embeddings Module ✅
 
@@ -116,6 +117,48 @@
 3. Add similarity search functionality
 
 ### Time Spent: 30 minutes
+
+---
+
+## 2025-12-29 - Session 4: Vector Store (ChromaDB) ✅
+
+### Completed
+- ✅ Implemented vector_store.py with ChromaDB
+- ✅ Persistent storage for embeddings and metadata
+- ✅ Similarity search (cosine distance)
+- ✅ Metadata filtering (by page, document, etc.)
+- ✅ Full pipeline integration: PDF → Vector Store → Search
+- ✅ Unit tests (6 test cases, all passing)
+
+### Key Achievements
+- Successfully stored 15 chunks with embeddings
+- Semantic search working with real queries
+- Metadata filtering operational
+- Collection statistics tracking
+- Document-level deletion support
+
+### Technical Details
+- Using ChromaDB with persistent client
+- HNSW index for fast similarity search
+- Cosine distance metric
+- Automatic ID generation with timestamps
+- Metadata includes: page, tokens, document name, model
+
+### Performance
+- 15 chunks stored in <1 second
+- Search queries: ~50ms per query
+- Storage: ~10KB per chunk (including metadata)
+- Persistent across sessions
+
+### Next Steps
+1. Implement keyword_search.py (BM25)
+2. Build hybrid retrieval (BM25 + Vector)
+3. Create ensemble ranking system
+
+### Time Spent: 30 minutes
+
+---
+
 
 
 ### Completed
