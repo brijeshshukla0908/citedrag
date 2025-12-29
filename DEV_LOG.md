@@ -196,6 +196,50 @@
 
 ---
 
+## 2025-12-29 - Session 6: Hybrid Retrieval ✅
+
+### Completed
+- ✅ Implemented retrieval.py with hybrid search
+- ✅ Combined BM25 keyword + Vector semantic search
+- ✅ Ensemble ranking with weighted scoring
+- ✅ Score normalization (min-max scaling)
+- ✅ Re-ranking based on query term presence
+- ✅ Context generation for LLM prompts
+- ✅ Unit tests (6 test cases, all passing)
+
+### Key Achievements
+- **Hybrid search operational**: Best of both worlds (lexical + semantic)
+- **Weighted scoring**: 50% BM25 + 50% Vector (configurable)
+- **Ensemble ranking**: Merges results from both methods intelligently
+- **Method tracking**: Identifies if chunk found by BM25, Vector, or both
+- **Context formatting**: Ready for LLM consumption with citations
+
+### Technical Details
+- Retrieval method labeling: 'both', 'bm25_only', 'vector_only'
+- Score normalization: Min-max scaling to 0-1 range
+- Optional re-ranking: Boosts scores based on exact query term matches
+- Context generation: Formatted with chunk IDs and page numbers
+- Configurable weights via config.py
+
+### Performance
+- Hybrid search: ~60ms per query (BM25 + Vector combined)
+- Better recall than either method alone
+- Captures both exact matches and semantic relevance
+
+### Example Results
+Query: "employee conduct policy"
+- Result 1: hybrid=0.72 (both methods) ← Best match
+- Result 2: hybrid=0.68 (both methods) 
+- Result 3: hybrid=0.57 (vector only) ← Semantic match
+
+### Next Steps
+1. Implement llm_handler.py (Groq API integration)
+2. Build prompt templates
+3. Generate answers with citations
+
+### Time Spent: 30 minutes
+
+---
 
 
 
