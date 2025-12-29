@@ -159,6 +159,44 @@
 
 ---
 
+## 2025-12-29 - Session 5: BM25 Keyword Search ✅
+
+### Completed
+- ✅ Implemented keyword_search.py with BM25Okapi
+- ✅ Built BM25 index for 15 chunks from real PDF
+- ✅ Keyword-based search with relevance scoring
+- ✅ Index persistence (save/load from disk)
+- ✅ Integration with document processor
+- ✅ Unit tests (7 test cases, all passing)
+
+### Key Achievements
+- **BM25 indexing operational**: 15 chunks indexed in <0.1s
+- **Keyword search working**: Queries like "employment policy" find exact matches
+- **Complement to vector search**: Catches exact keyword matches vectors might miss
+- **Index persistence**: Save/load index to avoid rebuilding
+
+### Technical Details
+- Using rank-bm25 library (BM25Okapi algorithm)
+- Simple tokenization: lowercase + alphanumeric filtering
+- Minimum token length: 3 characters
+- Average 230 tokens per chunk in test document
+- Index size: ~50KB for 15 chunks
+
+### Performance
+- Index building: <0.1 seconds for 15 chunks
+- Search queries: <10ms per query
+- Persistence: Save/load in <50ms
+
+### Next Steps
+1. Implement retrieval.py (Hybrid search)
+2. Combine BM25 + Vector search with EnsembleRetriever
+3. Weighted scoring and re-ranking
+
+### Time Spent: 25 minutes
+
+---
+
+
 
 
 ### Completed
