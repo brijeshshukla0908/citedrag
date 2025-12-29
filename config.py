@@ -46,6 +46,11 @@ GROQ_TEMPERATURE = 0.1  # Low temperature for factual responses
 GROQ_MAX_TOKENS = 1024
 GROQ_TIMEOUT = 30  # seconds
 
+# Aliases for compatibility
+LLM_MODEL = GROQ_MODEL
+LLM_TEMPERATURE = GROQ_TEMPERATURE
+LLM_MAX_TOKENS = GROQ_MAX_TOKENS
+
 # ==========================================
 # Ollama Configuration (Local Fallback)
 # ==========================================
