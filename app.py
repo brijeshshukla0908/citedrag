@@ -12,6 +12,8 @@ import sys
 from pathlib import Path
 from datetime import datetime
 import uuid
+from loguru import logger
+
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent))
@@ -182,10 +184,29 @@ def sidebar():
             st.info(f"**{st.session_state.current_document}**")
             
             if st.button("🗑️ Clear Document", use_container_width=True):
+                # Delete uploaded file from disk if it exists
+                if st.session_state.current_document:
+                    uploaded_file_path = Path("data/uploaded") / st.session_state.current_document
+                    
+                    # Only delete if it's an uploaded file (not sample document)
+                    if uploaded_file_path.exists() and "Sample" not in st.session_state.current_document:
+                        try:
+                            uploaded_file_path.unlink()
+                            logger.info(f"🗑️ Deleted uploaded file: {uploaded_file_path}")
+                        except Exception as e:
+                            logger.warning(f"Failed to delete file: {str(e)}")
+                
+                # Clear session state
                 st.session_state.document_loaded = False
                 st.session_state.current_document = None
                 st.session_state.pipeline = None
+                
+                # Clear query history
+                st.session_state.query_history = []
+                
+                st.success("✅ Document cleared!")
                 st.rerun()
+
         
         # Usage statistics
         if st.session_state.document_loaded and st.session_state.pipeline:

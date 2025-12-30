@@ -60,6 +60,27 @@ outputs/*.md
 data/sample_documents/*.pdf
 !data/sample_documents/.gitkeep
 
+# Uploaded files (don't commit user uploads)
+data/uploaded/*
+!data/uploaded/.gitkeep
+
+# But DO commit sample document and demo questions
+!data/sample_documents/test.pdf
+!data/demo_questions.json
+
+# Embeddings cache
+src/embeddings_cache/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Build
+dist/
+build/
+*.egg-info/
+
 # Test coverage
 .coverage
 htmlcov/
