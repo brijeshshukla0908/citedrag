@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "question": "What is this document about?",
+    "category": "General",
+    "complexity": "easy",
+    "response": {
+      "answer": "This is a test answer.",
+      "citations": [
+        {
+          "chunk_id": 0
+        }
+      ],
+      "token_usage": {
+        "total_tokens": 50
+      }
+    },
+    "has_response": true
+  },
+  {
+    "id": 2,
+    "question": "What are the main employee conduct expectations?",
+    "category": "Conduct",
+    "complexity": "medium"
+  },
+  {
+    "id": 3,
+    "question": "What does the document say about confidentiality?",
+    "category": "Confidentiality",
+    "complexity": "medium"
+  },
+  {
+    "id": 4,
+    "question": "What are the rules regarding conflicts of interest?",
+    "category": "Ethics",
+    "complexity": "medium"
+  },
+  {
+    "id": 5,
+    "question": "What is mentioned about intellectual property?",
+    "category": "IP Rights",
+    "complexity": "medium"
+  },
+  {
+    "id": 6,
+    "question": "What are the employee responsibilities according to this document?",
+    "category": "Responsibilities",
+    "complexity": "easy"
+  },
+  {
+    "id": 7,
+    "question": "What does it say about non-compete agreements?",
+    "category": "Legal",
+    "complexity": "hard"
+  },
+  {
+    "id": 8,
+    "question": "Are there any rules about working with competitors?",
+    "category": "Ethics",
+    "complexity": "medium"
+  },
+  {
+    "id": 9,
+    "question": "What are the data protection requirements?",
+    "category": "Data Protection",
+    "complexity": "medium"
+  },
+  {
+    "id": 10,
+    "question": "What happens if an employee violates these policies?",
+    "category": "Compliance",
+    "complexity": "hard"
+  },
+  {
+    "id": 11,
+    "question": "What is the company's stance on transparency?",
+    "category": "Values",
+    "complexity": "easy"
+  },
+  {
+    "id": 12,
+    "question": "Are there guidelines for external communications?",
+    "category": "Communication",
+    "complexity": "medium"
+  },
+  {
+    "id": 13,
+    "question": "What does the document say about client relationships?",
+    "category": "Client Relations",
+    "complexity": "medium"
+  },
+  {
+    "id": 14,
+    "question": "What are the expectations for professional behavior?",
+    "category": "Conduct",
+    "complexity": "easy"
+  },
+  {
+    "id": 15,
+    "question": "How should employees handle sensitive information?",
+    "category": "Information Security",
+    "complexity": "medium"
+  }
+]
