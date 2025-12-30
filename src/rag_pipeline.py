@@ -230,19 +230,26 @@ class RAGPipeline:
         
         question_text = demo_question['question']
         
-        # Check if response is pre-computed
-        if demo_question.get('has_response', False):
-            logger.info(f"✅ Returning pre-computed demo response")
+        # Check if current document is the sample document
+        is_sample_doc = self.current_document in ["test.pdf", "test.pdf (Sample)"]
+        
+        # If sample document, try to use pre-computed response
+        if is_sample_doc and demo_question.get('has_response', False):
+            logger.info(f"✅ Returning pre-computed demo response for sample document")
             return demo_question['response'], "demo_precomputed"
+        
+        # For custom documents or missing responses, generate fresh
+        if not is_sample_doc:
+            logger.info(f"🔄 Generating fresh response for custom document: {self.current_document}")
         
         # Generate response (mark as demo to skip rate limiting)
         response, status = self.query(question_text, user_id, use_cache=True, is_demo=True)
         
-        # Store as demo response
-        if response and self.demo_manager:
-            self.demo_manager.add_demo_response(question_id, response)
+        # Don't save to demo responses (to avoid overwriting sample doc responses)
+        # Only cache in regular cache for this specific document
         
         return response, "demo_generated"
+
     
     
     def get_user_quota(self, user_id: str) -> Optional[Dict]:

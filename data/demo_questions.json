@@ -5,15 +5,24 @@
     "category": "General",
     "complexity": "easy",
     "response": {
-      "answer": "This is a test answer.",
+      "answer": "This document is about the Nagarro Constitution, a global code of conduct handbook for all employees and contractors of Nagarro SE [Chunk 0]. It outlines the common code of conduct that applies to all Nagarro employees and individual contractors, and covers various aspects such as sensitive information non-disclosure, personal data privacy, intellectual property ownership and protection, conflicts of interest, and more [Chunk 1-13].",
       "citations": [
         {
-          "chunk_id": 0
+          "chunk_id": 0,
+          "page_number": 1,
+          "document_name": "test.pdf",
+          "text_preview": "\n\n--- Page 1 ---\n\nThe Nagarro Constitution  Date: March 21, 2023  Version: 1.4  Author: Manas Human ...",
+          "retrieval_score": 0.8291299039442422
         }
       ],
       "token_usage": {
-        "total_tokens": 50
-      }
+        "prompt_tokens": 2789,
+        "completion_tokens": 83,
+        "total_tokens": 2872
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What is this document about?",
+      "num_context_chunks": 5
     },
     "has_response": true
   },
@@ -21,84 +30,424 @@
     "id": 2,
     "question": "What are the main employee conduct expectations?",
     "category": "Conduct",
-    "complexity": "medium"
+    "complexity": "medium",
+    "response": {
+      "answer": "The main employee conduct expectations at Nagarro include:\n\n* Demonstrating courtesy, respect, and professionalism in all interactions with other people [Chunk 7]\n* Reporting incidents of verbal, written or physical abuse, hostile behavior, or public humiliation to HRfilesnagarro.com or whistleblowernagarro.com [Chunk 7]\n* Not engaging in freelancing for direct or indirect profit, unless explicitly allowed [Chunk 6]\n* Not owning more than a 5% stake in any business that competes with Nagarro [Chunk 6]\n* Not providing services to clients interacted with or provided services to on behalf of Nagarro for a period of one year after termination [Chunk 6]\n* Not soliciting, diverting, or initiating contact with any client, contractor, or employee of Nagarro for a period of one year after termination [Chunk 6]\n* Not causing or attempting to cause any employee of Nagarro to terminate their employment relationship for the purposes of entering any employment or other relationship with the employee or another business [Chunk 6]\n* Not discriminating against any person on the basis of ethnicity, gender, marital status, pregnancy status, religious belief, sexual orientation, transgender identity or expression, age, world view, medical condition, disability, union affiliation, or military veteran status [Chunk 7]\n* Not engaging in sexual harassment, defined as unwelcome sexual advances, visual, verbal, or physical conduct of a sexual nature [Chunk 7]\n* Reporting complaints of sexual harassment to sexualharassmentnagarro.com or whistleblowernagarro.com [Chunk 7]\n* Being aware of and adhering to the Nagarro Organizational Design and its rules of interaction [Chunk 14]\n* Putting the interests of the company over the interests of one's department or function or cohort [Chunk 14]\n* Ensuring compliance to Nagarro's policies and working towards necessary alignment and harmonization of processes and structures [Chunk 14]\n\nThese expectations are outlined in various sections of the Nagarro Constitution, including Chunks 6, 7, and 14.",
+      "citations": [
+        {
+          "chunk_id": 7,
+          "page_number": 6,
+          "document_name": "test.pdf",
+          "text_preview": " employee of Nagarro with whom I had dealings while at Nagarro to terminate hisher employment relati...",
+          "retrieval_score": 0.6307548439149218
+        },
+        {
+          "chunk_id": 6,
+          "page_number": 5,
+          "document_name": "test.pdf",
+          "text_preview": " interest rules through you scratch my back, Ill scratch yours arrangements. 5.5. Nagarro discourage...",
+          "retrieval_score": 0.5709989530864581
+        },
+        {
+          "chunk_id": 14,
+          "page_number": 12,
+          "document_name": "test.pdf",
+          "text_preview": "countryregional level depending on the department). The rules of interaction between these are caref...",
+          "retrieval_score": 0.620729843188367
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2503,
+        "completion_tokens": 425,
+        "total_tokens": 2928
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What are the main employee conduct expectations?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 3,
     "question": "What does the document say about confidentiality?",
     "category": "Confidentiality",
-    "complexity": "medium"
+    "complexity": "medium",
+    "response": {
+      "answer": "According to the document, Nagarrians are expected to protect sensitive information and maintain confidentiality [Chunk 2]. They are not allowed to disclose confidential information to anyone outside Nagarro or use it for personal benefit [Chunk 2.2]. Confidential information includes, but is not limited to, information about clients, software, processes, know-how, pricing, staffing, mergers, acquisitions, contracts, transactions, proposed transactions, strategies, finances, forecasts, personnel records, compensation records, correspondence, and the like [Chunk 2.2.1]. Nagarrians are also required to take reasonable precautions to protect confidential information from unauthorized access and inspection [Chunk 2.3].",
+      "citations": [
+        {
+          "chunk_id": 2,
+          "page_number": 2,
+          "document_name": "test.pdf",
+          "text_preview": " to employment with Nagarro.\n\n--- Page 4 ---\n\nThe Nagarro Constitution 4  12 1.9. I acknowledge that...",
+          "retrieval_score": 0.6403336267212983
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2791,
+        "completion_tokens": 136,
+        "total_tokens": 2927
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What does the document say about confidentiality?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 4,
     "question": "What are the rules regarding conflicts of interest?",
     "category": "Ethics",
-    "complexity": "medium"
+    "complexity": "medium",
+    "response": {
+      "answer": "According to the provided context, the rules regarding conflicts of interest are as follows:\n\nA conflict of interest is a situation in which a person is in a position to derive direct or indirect personal benefit from actions or decisions made in their official capacity [Chunk 5.1]. \n\nTo avoid conflicts of interest, one must make business decisions exclusively in the best interest of Nagarro [Chunk 5.1]. \n\nOne must openly and transparently disclose to their operating superior and simultaneously to conflictsregisternagarro.com all actual or potential conflicts of interest, especially personal or business relationships with candidates for recruitment, suppliers, customers, other business partners, or partners in corporate citizenship activities [Chunk 5.2].\n\nAdditionally, one must not be involved in or seek to influence the hiring, engagement, appraisal, or compensation-setting of very closely related persons, which group comprises one's spouse, siblings, children, parents, people with whom one has or has had a romantic relationship, or those living in the same household as one [Chunk 5.3].\n\nNagarro also discourages Nagarrians from freelancing for direct or indirect profit, and one must not engage in any freelancing or other external activity that relates to or competes with products or services that Nagarro provides to its clients, or with products or services that its clients or partners provide [Chunk 5.5][Chunk 6].\n\nFurthermore, one must not knowingly own more than a 5% stake in any business that competes with Nagarro in any form [Chunk 6.5.2].",
+      "citations": [
+        {
+          "chunk_id": 6,
+          "page_number": 5,
+          "document_name": "test.pdf",
+          "text_preview": " interest rules through you scratch my back, Ill scratch yours arrangements. 5.5. Nagarro discourage...",
+          "retrieval_score": 0.5455643430099053
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2503,
+        "completion_tokens": 316,
+        "total_tokens": 2819
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What are the rules regarding conflicts of interest?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 5,
     "question": "What is mentioned about intellectual property?",
     "category": "IP Rights",
-    "complexity": "medium"
+    "complexity": "medium",
+    "response": {
+      "answer": "Nagarro typically assigns the intellectual property rights generated by the work they do exclusively to the client who is paying for the work [Chunk 4.2]. This Client IP includes every line of code, each email, all types of documents, user stories and product specifications on tools like JIRA, photographs/screenshots, chats, any configuration settings, access credentials or passwords, and other pieces of knowledge or assets that they have created or acquired during a client engagement [Chunk 4.2].",
+      "citations": [],
+      "token_usage": {
+        "prompt_tokens": 2790,
+        "completion_tokens": 100,
+        "total_tokens": 2890
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What is mentioned about intellectual property?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 6,
     "question": "What are the employee responsibilities according to this document?",
     "category": "Responsibilities",
-    "complexity": "easy"
+    "complexity": "easy",
+    "response": {
+      "answer": "According to the Nagarro Constitution, employee responsibilities include:\n\n* Complying with all laws and governmental regulations that may apply to Nagarro and its employees [Chunk 1][Chunk 1.4].\n* Being truthful to the best of their knowledge in all internal and external records, reports, and documents [Chunk 10][Chunk 9.4].\n* Safeguarding Nagarro's property from damage, loss, theft, and misuse [Chunk 10][Chunk 9.5].\n* Not burdening Nagarro with unusual or unnecessary commitments and liabilities when representing the company in contracts with employees or third parties [Chunk 10][Chunk 9.6].\n* Complying with the Travel Policy and being mindful of time and cost incurred during business trips [Chunk 10][Chunk 9.7].\n* Following and promoting the 4-eyes principle (Two-Together principle in Nagarro parlance) for all major business decisions [Chunk 10][Chunk 9.10].\n* Recording major decisions and the participants in that discussion by email or other means [Chunk 10][Chunk 9.10.2].\n* Not engaging in freelancing or other external activities that relate to or compete with products or services that Nagarro provides to its clients, or with products or services that its clients or partners provide [Chunk 6][Chunk 5.5].\n* Not knowingly owning more than a 5% stake in any business that competes with Nagarro in any form [Chunk 6][Chunk 5.5.2].\n* Not providing services to any client they interacted with or provided services to on behalf of Nagarro for a period of one year after termination of employment [Chunk 6][Chunk 6.1.1].\n* Not attempting to directly or indirectly solicit, divert, or initiate any contact for any commercial reason with any client, contractor, or employee of Nagarro with whom they had dealings while they were engaged with Nagarro for a period of one year after termination of employment [Chunk 6][Chunk 6.1.2].\n* Reporting any observed breach of this code of conduct by any other Nagarrian or by any Nagarro partner to the company [Chunk 1][Chunk 1.7].\n\nThese responsibilities are outlined in various sections of the Nagarro Constitution, including but not limited to [Chunk 1], [Chunk 10], and [Chunk 6].",
+      "citations": [
+        {
+          "chunk_id": 1,
+          "page_number": 1,
+          "document_name": "test.pdf",
+          "text_preview": "1.4. Most importantly, I understand and agree that Nagarro and all Nagarrians are expected to comply...",
+          "retrieval_score": 0.8188875126494779
+        },
+        {
+          "chunk_id": 10,
+          "page_number": 9,
+          "document_name": "test.pdf",
+          "text_preview": ". 9.4. I will make sure all the companys internal and external records, reports, and documents I am ...",
+          "retrieval_score": 0.8343086807424527
+        },
+        {
+          "chunk_id": 6,
+          "page_number": 5,
+          "document_name": "test.pdf",
+          "text_preview": " interest rules through you scratch my back, Ill scratch yours arrangements. 5.5. Nagarro discourage...",
+          "retrieval_score": 0.75
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2793,
+        "completion_tokens": 493,
+        "total_tokens": 3286
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What are the employee responsibilities according to this document?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 7,
     "question": "What does it say about non-compete agreements?",
     "category": "Legal",
-    "complexity": "hard"
+    "complexity": "hard",
+    "response": {
+      "answer": "If an employee or contractor ceases to be employed or contracted with Nagarro, they shall not for a period of one year from the date of such cessation provide, directly or indirectly, services to any client they interacted with or provided services to on behalf of Nagarro [Chunk 6.1.1]. They shall also not attempt to directly or indirectly solicit, divert, or initiate any contact for any commercial reason with any client, contractor, or employee of Nagarro with whom they had dealings while they were engaged with Nagarro for a period of one year from the date of such cessation [Chunk 6.1.2].",
+      "citations": [],
+      "token_usage": {
+        "prompt_tokens": 2793,
+        "completion_tokens": 129,
+        "total_tokens": 2922
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What does it say about non-compete agreements?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 8,
     "question": "Are there any rules about working with competitors?",
     "category": "Ethics",
-    "complexity": "medium"
+    "complexity": "medium",
+    "response": {
+      "answer": "Yes, there are rules about working with competitors [Chunk 5]. Specifically, it is mentioned that Nagarrians shall not engage in freelancing or other external activities that relate to or compete with products or services that Nagarro provides to its clients [Chunk 5.5]. Additionally, Nagarrians shall not knowingly own more than a 5% stake in any business that competes with Nagarro in any form [Chunk 6.2].",
+      "citations": [
+        {
+          "chunk_id": 5,
+          "page_number": 5,
+          "document_name": "test.pdf",
+          "text_preview": ".3. Client IP must be stored in official repositories that the client has approved and transported o...",
+          "retrieval_score": 0.43168493597517976
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2793,
+        "completion_tokens": 90,
+        "total_tokens": 2883
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "Are there any rules about working with competitors?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 9,
     "question": "What are the data protection requirements?",
     "category": "Data Protection",
-    "complexity": "medium"
+    "complexity": "medium",
+    "response": {
+      "answer": "According to [Chunk 3], employees are required to take all reasonable precautions to protect personal data and not share it with unauthorized personnel or third parties [Chunk 3]. Additionally, they should limit the use of personal data to the extent necessary for each requirement [Chunk 3]. \n\nIn [Chunk 4], employees are also required to avoid sharing personal data in email attachments and use access-controlled, self-destructing shared folders on approved servers when necessary [Chunk 4]. They should also not store personal information on devices, email accounts, or software systems provided by Nagarro or the client that they desire to keep private [Chunk 4].\n\nFurthermore, [Chunk 3] states that employees should not access information stored on devices, email accounts, or software systems provided by Nagarro or the client to fellow Nagarrians without their consent or explicit role-based/situation-based authorization by the central legal team [Chunk 3].\n\nLastly, [Chunk 3] mentions that Nagarro intends to follow GDPR guidelines globally as the default way of working, and exceptions will be tracked [Chunk 3].",
+      "citations": [
+        {
+          "chunk_id": 3,
+          "page_number": 3,
+          "document_name": "test.pdf",
+          "text_preview": " or on the Internet (e.g., on LinkedIn or Xing). 2.3.2. Never sharing any project code snippets or q...",
+          "retrieval_score": 0.48006249551255276
+        },
+        {
+          "chunk_id": 4,
+          "page_number": 4,
+          "document_name": "test.pdf",
+          "text_preview": " shared either deliberately or by accident with unauthorized personnel within the company or with th...",
+          "retrieval_score": 0.6041080966210008
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2790,
+        "completion_tokens": 221,
+        "total_tokens": 3011
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What are the data protection requirements?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 10,
     "question": "What happens if an employee violates these policies?",
     "category": "Compliance",
-    "complexity": "hard"
+    "complexity": "hard",
+    "response": {
+      "answer": "If an employee violates these policies, severe disciplinary action will be taken [Chunk 7.2.2]. However, the company also reserves the right to take appropriate lawful disciplinary action against anyone who makes a demonstrably false or mischievous claim of sexual harassment [Chunk 7.2.2]. Additionally, damage to company property caused wilfully or through gross negligence may be charged back to the employee [Chunk 9.5].",
+      "citations": [],
+      "token_usage": {
+        "prompt_tokens": 2502,
+        "completion_tokens": 89,
+        "total_tokens": 2591
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What happens if an employee violates these policies?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 11,
     "question": "What is the company's stance on transparency?",
     "category": "Values",
-    "complexity": "easy"
+    "complexity": "easy",
+    "response": {
+      "answer": "The company's stance on transparency is reflected in the 4-eyes principle, also known as the Two-Together principle [Chunk 10][Chunk 11]. This principle requires that major business decisions be made with the approval of another Nagarrian of equal or senior designation, indicating a commitment to transparency and collaboration [Chunk 10]. Additionally, the company encourages employees to record major decisions and the participants in that discussion by sending an email with the facts to twotogethernagarro.com and copying the participants [Chunk 11]. This further emphasizes the importance of transparency in decision-making processes.",
+      "citations": [
+        {
+          "chunk_id": 10,
+          "page_number": 9,
+          "document_name": "test.pdf",
+          "text_preview": ". 9.4. I will make sure all the companys internal and external records, reports, and documents I am ...",
+          "retrieval_score": 0.8645016372702023
+        },
+        {
+          "chunk_id": 11,
+          "page_number": 10,
+          "document_name": "test.pdf",
+          "text_preview": " one that will incur a cost to Nagarro or its affiliates or partners of more than 10 of my annual co...",
+          "retrieval_score": 0.5361579347992261
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2793,
+        "completion_tokens": 121,
+        "total_tokens": 2914
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What is the company's stance on transparency?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 12,
     "question": "Are there guidelines for external communications?",
     "category": "Communication",
-    "complexity": "medium"
+    "complexity": "medium",
+    "response": {
+      "answer": "Yes, there are guidelines for external communications [Chunk 9]. According to the Nagarro Constitution, whether at the workplace or while representing Nagarro elsewhere, you will conduct yourself in a manner that does not damage the reputation of the company or hurt its business [Chunk 9.1]. \n\nAdditionally, only senior management and designated colleagues are allowed to communicate to the press or on social media on behalf of the company [Chunk 9.1.1]. You will also take care to de-link any charged, controversial, and divisive personal opinions from your function/work in the company [Chunk 9.1.2].",
+      "citations": [
+        {
+          "chunk_id": 9,
+          "page_number": 8,
+          "document_name": "test.pdf",
+          "text_preview": " or money laundering, to whistleblowernagarro.com. 9. Care for company image  resources 9.1. Whether...",
+          "retrieval_score": 0.3681547519990509
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2791,
+        "completion_tokens": 126,
+        "total_tokens": 2917
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "Are there guidelines for external communications?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 13,
     "question": "What does the document say about client relationships?",
     "category": "Client Relations",
-    "complexity": "medium"
+    "complexity": "medium",
+    "response": {
+      "answer": "According to the Nagarro Constitution, the document emphasizes the importance of client relationships and describes Nagarro's approach to working with clients. Here are some key points:\n\n* Nagarro thinks breakthroughs for its clients [Chunk 12].\n* The company starts with the client's strategic goals and applies technology to achieve them [Chunk 12].\n* Nagarro does not subscribe to a perpetually defensive way of working with clients, instead aiming for a positive partnership [Chunk 12].\n* In a project crisis, the company fixes problems first and negotiates financials later [Chunk 12].\n* Nagarro reserves the right to vary the work, location, or working hours to demonstrate agility to its clients [Chunk 12].\n* The company emphasizes the importance of client confidentiality and non-disclosure, including protecting sensitive information and not sharing client names or project information with unauthorized parties [Chunk 2].\n* Nagarro has rules for handling client intellectual property (IP), including storing it in approved repositories, transporting it through approved channels, and not creating copies without client permission [Chunk 5].\n* The company discourages Nagarrians from freelancing for direct or indirect profit, especially if it relates to or competes with products or services that Nagarro provides to its clients [Chunk 5].\n\nOverall, the Nagarro Constitution highlights the company's commitment to building strong, positive relationships with its clients and emphasizes the importance of confidentiality, non-disclosure, and responsible handling of client IP. [Chunk 12][Chunk 2][Chunk 5]",
+      "citations": [
+        {
+          "chunk_id": 12,
+          "page_number": 10,
+          "document_name": "test.pdf",
+          "text_preview": " whether internally, or with our clients, or with society in general. It also implies an emphasis on...",
+          "retrieval_score": 1.0
+        },
+        {
+          "chunk_id": 2,
+          "page_number": 2,
+          "document_name": "test.pdf",
+          "text_preview": " to employment with Nagarro.\n\n--- Page 4 ---\n\nThe Nagarro Constitution 4  12 1.9. I acknowledge that...",
+          "retrieval_score": 0.6158535472642555
+        },
+        {
+          "chunk_id": 5,
+          "page_number": 5,
+          "document_name": "test.pdf",
+          "text_preview": ".3. Client IP must be stored in official repositories that the client has approved and transported o...",
+          "retrieval_score": 0.5540152084590185
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2791,
+        "completion_tokens": 308,
+        "total_tokens": 3099
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What does the document say about client relationships?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 14,
     "question": "What are the expectations for professional behavior?",
     "category": "Conduct",
-    "complexity": "easy"
+    "complexity": "easy",
+    "response": {
+      "answer": "According to the Nagarro Constitution, the expectations for professional behavior are as follows:\n\n* Demonstrate courtesy, respect, and professionalism in all interactions with other people [Chunk 8].\n* Conduct oneself in a manner that does not damage the reputation of the company or hurt its business, whether at the workplace or while representing Nagarro elsewhere [Chunk 9].\n* Report all incidents of verbal, written, or physical abuse, hostile behavior, or public humiliation to HRfilesnagarro.com or whistleblowernagarro.com [Chunk 8].\n* Not compromise Nagarro by making it a party to any scheme that involves corruption or cartel agreements [Chunk 8].\n* Not give or accept expensive personal gifts or rewards or bribes for work done in an official capacity [Chunk 8].\n* Not be complicit in schemes to avoid the payment of taxes or for money laundering [Chunk 8].\n* Report all suspicious transactions, especially unusual transactions involving cash that may signify corruption or money laundering, to whistleblowernagarro.com [Chunk 8].\n* Follow and promote the 4-eyes principle (Two-Together principle in Nagarro parlance) for all major business decisions [Chunk 10].\n* Record major decisions and the participants in that discussion by [Chunk 10].\n* Be truthful to the best of one's knowledge in all internal and external records, reports, and documents [Chunk 10].\n* Take all reasonable steps to safeguard Nagarro's property from damage, loss, theft, and misuse [Chunk 10].\n* Comply with the Travel Policy and remain mindful of the time and cost incurred when on a business trip [Chunk 10].\n* Not burden Nagarro with unusual or unnecessary commitments and liabilities when representing the company in contracts with employees or third parties [Chunk 10].\n* Put the interests of the company over the interests of one's department or function or cohort [Chunk 14].\n\nThese expectations are outlined in various sections of the Nagarro Constitution, including Chunks 8, 9, 10, and 14.",
+      "citations": [
+        {
+          "chunk_id": 8,
+          "page_number": 7,
+          "document_name": "test.pdf",
+          "text_preview": " demonstrably false or mischievous claim of sexual harassment. 7.3. I am aware that no form of verba...",
+          "retrieval_score": 0.3942184999236113
+        },
+        {
+          "chunk_id": 10,
+          "page_number": 9,
+          "document_name": "test.pdf",
+          "text_preview": ". 9.4. I will make sure all the companys internal and external records, reports, and documents I am ...",
+          "retrieval_score": 0.5767750652802799
+        },
+        {
+          "chunk_id": 14,
+          "page_number": 12,
+          "document_name": "test.pdf",
+          "text_preview": "countryregional level depending on the department). The rules of interaction between these are caref...",
+          "retrieval_score": 0.3661210158908599
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2503,
+        "completion_tokens": 416,
+        "total_tokens": 2919
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "What are the expectations for professional behavior?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   },
   {
     "id": 15,
     "question": "How should employees handle sensitive information?",
     "category": "Information Security",
-    "complexity": "medium"
+    "complexity": "medium",
+    "response": {
+      "answer": "Employees should strictly protect sensitive information from disclosure and not divulge it to anyone outside Nagarro or use it for their own benefit or for the benefit of any third party, except when ordered to do so by a court of law with competent jurisdiction [Chunk 2]. They should also take all reasonable precautions to protect confidential information from access and inspection by unauthorized colleagues and other third parties [Chunk 2]. This includes not sharing client names or project information with anyone outside the company or on the Internet, not sharing project code snippets or questions on technical forums that reveal project details, not leaving work-related devices unlocked or confidential papers lying around, and being vigilant against possible phishing attacks [Chunk 2].",
+      "citations": [
+        {
+          "chunk_id": 2,
+          "page_number": 2,
+          "document_name": "test.pdf",
+          "text_preview": " to employment with Nagarro.\n\n--- Page 4 ---\n\nThe Nagarro Constitution 4  12 1.9. I acknowledge that...",
+          "retrieval_score": 0.534180034028957
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2500,
+        "completion_tokens": 139,
+        "total_tokens": 2639
+      },
+      "model": "llama-3.1-8b-instant",
+      "query": "How should employees handle sensitive information?",
+      "num_context_chunks": 5
+    },
+    "has_response": true
   }
 ]
